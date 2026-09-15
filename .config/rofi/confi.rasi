@@ -1,0 +1,71 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    display-drun: "Apps";
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+* {
+    background: #0c0c0cee;
+    background-alt: #1b1b1bee;
+    foreground: #e8e8e8;
+    selected: #292929;
+    border-color: #777777;
+}
+
+window {
+    width: 520px;
+    border: 1px;
+    border-radius: 12px;
+    background-color: @background;
+}
+
+mainbox {
+    padding: 14px;
+    spacing: 10px;
+}
+
+inputbar {
+    background-color: @background-alt;
+    border-radius: 8px;
+    padding: 10px 12px;
+    children: [prompt, entry];
+}
+
+prompt {
+    text-color: #888888;
+    margin: 0 10px 0 0;
+}
+
+entry {
+    placeholder: "Search applications...";
+    text-color: @foreground;
+}
+
+listview {
+    lines: 7;
+    columns: 1;
+    spacing: 4px;
+    scrollbar: false;
+    dynamic: true;
+}
+
+element {
+    padding: 9px 10px;
+    border-radius: 7px;
+}
+
+element selected {
+    background-color: @selected;
+}
+
+element-icon {
+    size: 24px;
+    margin: 0 10px 0 0;
+}
+
+element-text {
+    text-color: @foreground;
+    vertical-align: 0.5;
+}

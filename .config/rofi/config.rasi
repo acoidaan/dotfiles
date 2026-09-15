@@ -1,0 +1,104 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 12";
+}
+
+* {
+    bg: #0c0c0cf2;
+    bg-alt: #202020f2;
+    fg: #e8e8e8;
+    fg-muted: #888888;
+    border-col: #707070;
+}
+
+window {
+    width: 520px;
+    border: 1px;
+    border-color: @border-col;
+    border-radius: 12px;
+    background-color: @bg;
+}
+
+mainbox {
+    background-color: transparent;
+    padding: 14px;
+    spacing: 10px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius: 8px;
+    padding: 10px 12px;
+    spacing: 8px;
+    children: [prompt, entry];
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @fg-muted;
+    str: "";
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder: "Search applications...";
+    placeholder-color: @fg-muted;
+}
+
+listview {
+    background-color: transparent;
+    lines: 7;
+    columns: 1;
+    spacing: 4px;
+    scrollbar: false;
+}
+
+element {
+    background-color: transparent;
+    text-color: @fg;
+    padding: 8px 10px;
+    border-radius: 7px;
+    spacing: 10px;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element selected.normal {
+    background-color: @bg-alt;
+    text-color: #ffffff;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element-icon {
+    background-color: transparent;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element normal.urgent,
+element alternate.urgent,
+element normal.active,
+element alternate.active {
+    background-color: transparent;
+    text-color: @fg;
+}
+
+element selected.urgent,
+element selected.active {
+    background-color: @bg-alt;
+    text-color: #ffffff;
+}
