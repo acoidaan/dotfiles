@@ -16,6 +16,7 @@
 
     "modules-right": [
         "network",
+	"custom/vpn",
 	"custom/audio-output",
         "pulseaudio",
         "cpu",
@@ -121,6 +122,15 @@
     "tooltip": true,
     "tooltip-format": "Cambiar salida de audio",
     "on-click": "~/.config/hypr/scripts/audio-output.sh"
+},
+
+"custom/vpn": {
+    "exec": "~/.config/hypr/scripts/vpn-status.sh",
+    "interval": 2,
+    "format": "{}",
+    "tooltip": true,
+    "tooltip-format": "Proton VPN",
+    "on-click": "protonvpn-app"
 }
 
 
