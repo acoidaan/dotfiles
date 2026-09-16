@@ -43,6 +43,7 @@ window#waybar {
 }
 
 #network,
+#custom-audio-output,
 #pulseaudio,
 #cpu,
 #temperature,

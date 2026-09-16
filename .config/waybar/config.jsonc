@@ -16,6 +16,7 @@
 
     "modules-right": [
         "network",
+	"custom/audio-output",
         "pulseaudio",
         "cpu",
 	"temperature",
@@ -112,6 +113,15 @@
     "on-scroll-down": "playerctl --player=spotify previous",
     "tooltip": false
 },
+
+"custom/audio-output": {
+    "exec": "~/.config/hypr/scripts/audio-status.sh",
+    "interval": 1,
+    "format": "{}",
+    "tooltip": true,
+    "tooltip-format": "Cambiar salida de audio",
+    "on-click": "~/.config/hypr/scripts/audio-output.sh"
+}
 
 
 }
