@@ -8,7 +8,9 @@ vim.opt.cursorline = true
 vim.opt.signcolumn = "yes"
 
 -- Edición
-vim.opt.wrap = false
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.breakindent = true
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 

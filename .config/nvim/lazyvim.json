@@ -1,10 +1,13 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lang.angular",
     "lazyvim.plugins.extras.lang.clangd",
     "lazyvim.plugins.extras.lang.java",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.lang.python",
-    "lazyvim.plugins.extras.lang.rust"
+    "lazyvim.plugins.extras.lang.rust",
+    "lazyvim.plugins.extras.lang.typescript"
   ],
   "install_version": 8,
   "news": {
